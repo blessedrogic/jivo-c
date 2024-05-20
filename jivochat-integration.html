@@ -1,0 +1,457 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jivochat-integration.css">
+    <script src="https://kit.fontawesome.com/4b902564ce.js" crossorigin="anonymous"></script>
+    <script src="jivochat-integration.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">
+                <img src="/jivochat_regular.svg" alt="">
+            </a></div>
+             <div class="bars-toggle">
+                <i onclick="showing()" id="toggle-hide" class="fa-solid fa-bars"></i>
+                <i onclick="hiding()" id="toggle-show" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="links">
+                <div class="language-selection-hide">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="toggle-link">
+                    <div class="toggle-link-header">
+                        <span>
+                            <p>Features</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div class="toggle">
+                        <div class="toggle-wrapper">
+                            <div class="wrapper1">
+                                <div class="icon1">
+                                    <a href="jivo-life-chat.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_features.svg" alt=""> <span>Live Chat for Websites</span></a>
+                                </div>
+                                <div class="icon2">
+                                    <a href="mobile-SDK.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_mobilesdk.svg" alt=""> <span>Live Chat for Mobile</span></a>
+                                </div>
+                                <div class="icon3">
+                                    <a href="business-chatbots.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_chatbots.svg" alt=""> <span>Chatbots</span></a>
+                                </div>
+                                <div class="icon4">
+                                    <a href="jivochat-whatsapp.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_whatsapp.svg" alt=""> <span>WhatsApp Business</span></a>
+                                </div>
+                                <div class="icon5">
+                                    <a href="ai.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_ai-assistant.svg" alt=""> <span>AI assistant</span></a>
+                                </div>
+                                <div class="icon6">
+                                    <a href="marketing.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_jivo-marketing.svg" alt=""> <span>Jivo Marketing</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper2">
+                                <div class="icon-one">
+                                    <a href="instagram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_instagram.svg" alt=""> <span>Instragram</span></a>
+                                </div>
+                                <div class="icon-two">
+                                    <a href="facebook.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_facebook.svg" alt=""> <span>Facebook</span></a>
+                                </div>
+                                <div class="icon-three">
+                                    <a href="telegram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telegram.svg" alt=""> <span>Telegram</span></a>
+                                </div>
+                                <div class="icon-four">
+                                    <a href="viber.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_viber.svg" alt=""> <span>Viber</span></a>
+                                </div>
+                                <div class="icon-five">
+                                    <a href="apple-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_business-chat.svg" alt=""> <span>Apple Business Chat</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper3">
+                                <div class="icon-one1">
+                                    <a href="ip-telephony.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony_module.svg" alt=""> <span>Telephony Plus</span></a>
+                                </div>
+                                <div class="icon-two2">
+                                    <a href="video-calls.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_video_calls.svg" alt=""> <span>Videocalls</span></a>
+                                </div>
+                                <div class="icon-three3">
+                                    <a href="jivochat-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony.svg" alt=""> <span>JivoChat Business Phone</span></a>
+                                </div>
+                                <div class="icon-four4">
+                                    <a href="callback.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_calls.svg" alt=""> <span>Callback</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper4">
+                                <div class="icon-on1">
+                                    <a href="crm.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_crm.svg" alt=""> <span>CRM</span></a>
+                                </div>
+                                <div class="icon-tw2">
+                                    <a href="jivo-team.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_teamchats.svg" alt=""> <span>JivoChat Team Chats</span></a>
+                                </div>
+                                <div class="icon-thre3">
+                                    <a href="jivochat-email.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_email.svg" alt=""> <span>Company's Email Integration</span></a>
+                                </div>
+                                <div class="icon-fou4">
+                                    <a href="jivochat-integration.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_integrations.svg" alt=""> <span>Integrations</span></a>
+                                </div>
+                                <div class="icon-fiv5">
+                                    <a href="jivochat-api.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_docs.svg" alt=""> <span>API for Developers</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="jivochat-pricing.html">Pricing</a></li>
+                    <li><a href="affiliate.html">Affiliate program</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li class="space"><i class="fa-solid fa-lock"></i><a href="#">Login</a></li>
+                    <button>Sign up free</button>
+                </ul>
+                <div class="language-selection">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="facebook-hero">
+            <div class="facebook-content">
+                <h1>Connect JivoChat with <br> Tools you know and love</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="chatbot">
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <h1>Chatbot</h1>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <div class="chatbot-wrapper">
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1655900472/pages/integrations/int_uchat.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="special"
+                        src="https://res.cloudinary.com/dbr7ncbf0/image/upload/v1657801172/tovie_rcapvb.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1655901039/pages/integrations/int_chatmeai.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1655906370/pages/integrations/int_dahiai.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1655919373/pages/integrations/int_mindbehind.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <h1>CMS</h1>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <div class="chatbot-wrapper">
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640275849/pages/integrations/int_wordpress.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="special"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640276104/pages/integrations/int_shopify.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640276214/pages/integrations/int_wix.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640274820/pages/integrations/int_bigcommerce.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640274820/pages/integrations/int_bigcommerce.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640273807/pages/integrations/int_squarespace.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640777026/pages/integrations/int_unbounce.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640274221/pages/integrations/int_zyro.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640276342/pages/integrations/int_ecwid.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640281862/pages/integrations/int_webnode.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640276452/pages/integrations/int_drupal.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640281707/pages/integrations/int_site123.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640279569/pages/integrations/int_tilda.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640273972/pages/integrations/int_shoptet.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640279889/pages/integrations/int_joomla.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640280055/pages/integrations/int_opencart.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640280177/pages/integrations/int_magento.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640282798/pages/integrations/int_bigcartel.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640282999/pages/integrations/int_volusion.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640280305/pages/integrations/int_prestashop.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640281078/pages/integrations/int_weblium.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640282157/pages/integrations/int_jumpseller.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640280813/pages/integrations/int_bitrix.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640283199/pages/integrations/int_ucraft.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640283501/pages/integrations/int_blogger.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640276733/pages/integrations/int_ikas.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640280967/pages/integrations/int_weebly.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1660245284/pages/integrations/int_dukaan.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640281312/pages/integrations/int_storehippo.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640283335/pages/integrations/int_xcart.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640280470/pages/integrations/int_modx.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640283916/pages/integrations/int_ipboard.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1641419841/pages/integrations/int_shoplazza.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1643907672/pages/integrations/int_thinkific.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <h1>CRM</h1>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <div class="chatbot-wrapper">
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1620305608/pages/integrations/integr-pipeddrive.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="special"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1620305672/pages/integrations/integr-zoho.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <h1>Analytics</h1>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <div class="chatbot-wrapper">
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640282436/pages/integrations/int_analytics.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="special"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640283671/pages/integrations/int_tagmanager.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <h1>Other</h1>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <div class="chatbot-wrapper">
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1655906912/pages/integrations/int_webhooksapi.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="special"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1655908964/pages/integrations/int_albato.svg" alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640282527/pages/integrations/int_zapier.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1640282613/pages/integrations/int_integromat.svg"
+                        alt="">
+                </div>
+                <div class="chatbot-content">
+                    <img class="same"
+                        src="https://res.cloudinary.com/dte7upwcr/image/upload/v1655909003/pages/integrations/int_pabbly.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="positioning">
+        <div class="footer-text">
+            <h1>Start turning site visitors into customers today with JivoChat</h1>
+            <p>Sign up now - it's fast (and easy)</p>
+            <button onclick="openButton()">Start for free</button>
+        </div>
+    
+        <div class="form-wrapper">
+            <i class="fa-regular fa-circle-xmark" onclick="closeButton()"></i>
+                <div class="form">
+                    <div class="form-logo">
+                        <img src="/jivochat_regular.svg" alt="">
+                    </div>
+        
+                    <h2>Join Now</h2>
+                    <form action="">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+        
+                        <p>Please use at least 8 characters, including numbers, uppercase and lowercase letters, special characters</p>
+                    <span>By clicking "Continue" you create an account and agree to out <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy.</a></span> <br>
+                    <button class="lightgrey">Continue</button>
+                    <div class="flex">
+                        <div class="line"></div>
+                        <p>or</p>
+                        <div class="line"></div>
+                    </div>
+                    <button class="transparent">Sign up with Google</button>
+                    <p>Already have an account? <a href="#">Click here to login <br> i have a promo code </a></p>
+                    </form>
+                </div>
+            </div>
+    </div>
+    
+    <footer>
+        <div class="footer-wrappers">
+            <div class="footer-wrapper1">
+                <div class="footer-content1">
+                    <h5>Product</h5>
+                    <p>Pricing</p>
+                    <p>Facebook</p>
+                    <p>Applications</p>
+                    <p>Affiliate program</p>
+                    <p>JivoChat Business Phone</p>
+                    <p>Callback</p>
+                    <p>JivoChat Team Chats</p>
+                    <p>Company's Email Integration</p>
+                    <p>Chatbots</p>
+                    <p>Instragram</p>
+                </div>
+                <div class="footer-content2">
+                    <h5>About</h5>
+                    <p>Blog</p>
+                    <p>Help</p>
+                    <p>Security</p>
+                    <p>Terms of service</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies</p>
+                    <p>Contact us</p>
+                    <p>Affiliate program</p>
+                    <p>Partner Deals & Offers</p>
+                </div>
+                <div class="footer-content3">
+                    <h5>Developers</h5>
+                    <p>API for Developers</p>
+                    <p>Integrations</p>
+                    <p>Bug Bounty</p>
+                </div>
+            </div>
+            <div class="footer-wrapper2">
+                <h5>+23414407378</h5>
+                <a href="#">contact@jivosite.com</a>
+            </div>
+        </div>
+        <div class="footers-icons">
+            <div class="footers1">
+                <div class="footer1">
+                    <p>Download mobile apps <i class="fa-brands fa-apple" id="black"></i> <i class="fa-brands fa-android" id="green"></i></p>
+                </div>
+                <div class="footer2">
+                    <p>Download desktop apps <i class="fa-brands fa-windows" id="lightblue"></i> <i class="fa-brands fa-apple" id="black"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="footers2">
+                <div class="footer3">
+                    <i class="fa-brands fa-facebook-f" id="blue"></i>
+                    <i class="fa-brands fa-instagram" id="orange"></i>
+                    <i class="fa-brands fa-youtube" id="red"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

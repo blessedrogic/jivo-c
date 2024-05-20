@@ -1,0 +1,480 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="callback.css">
+    <script src="https://kit.fontawesome.com/4b902564ce.js" crossorigin="anonymous"></script>
+    <script src="callback.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">
+                <img src="/jivochat_regular.svg" alt="">
+            </a></div>
+             <div class="bars-toggle">
+                <i onclick="showing()" id="toggle-hide" class="fa-solid fa-bars"></i>
+                <i onclick="hiding()" id="toggle-show" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="links">
+                <div class="language-selection-hide">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="toggle-link">
+                    <div class="toggle-link-header">
+                        <span>
+                            <p>Features</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div class="toggle">
+                        <div class="toggle-wrapper">
+                            <div class="wrapper1">
+                                <div class="icon1">
+                                    <a href="jivo-life-chat.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_features.svg" alt=""> <span>Live Chat for Websites</span></a>
+                                </div>
+                                <div class="icon2">
+                                    <a href="mobile-SDK.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_mobilesdk.svg" alt=""> <span>Live Chat for Mobile</span></a>
+                                </div>
+                                <div class="icon3">
+                                    <a href="business-chatbots.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_chatbots.svg" alt=""> <span>Chatbots</span></a>
+                                </div>
+                                <div class="icon4">
+                                    <a href="jivochat-whatsapp.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_whatsapp.svg" alt=""> <span>WhatsApp Business</span></a>
+                                </div>
+                                <div class="icon5">
+                                    <a href="ai.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_ai-assistant.svg" alt=""> <span>AI assistant</span></a>
+                                </div>
+                                <div class="icon6">
+                                    <a href="marketing.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_jivo-marketing.svg" alt=""> <span>Jivo Marketing</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper2">
+                                <div class="icon-one">
+                                    <a href="instagram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_instagram.svg" alt=""> <span>Instragram</span></a>
+                                </div>
+                                <div class="icon-two">
+                                    <a href="facebook.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_facebook.svg" alt=""> <span>Facebook</span></a>
+                                </div>
+                                <div class="icon-three">
+                                    <a href="telegram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telegram.svg" alt=""> <span>Telegram</span></a>
+                                </div>
+                                <div class="icon-four">
+                                    <a href="viber.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_viber.svg" alt=""> <span>Viber</span></a>
+                                </div>
+                                <div class="icon-five">
+                                    <a href="apple-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_business-chat.svg" alt=""> <span>Apple Business Chat</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper3">
+                                <div class="icon-one1">
+                                    <a href="ip-telephony.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony_module.svg" alt=""> <span>Telephony Plus</span></a>
+                                </div>
+                                <div class="icon-two2">
+                                    <a href="video-calls.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_video_calls.svg" alt=""> <span>Videocalls</span></a>
+                                </div>
+                                <div class="icon-three3">
+                                    <a href="jivochat-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony.svg" alt=""> <span>JivoChat Business Phone</span></a>
+                                </div>
+                                <div class="icon-four4">
+                                    <a href="callback.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_calls.svg" alt=""> <span>Callback</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper4">
+                                <div class="icon-on1">
+                                    <a href="crm.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_crm.svg" alt=""> <span>CRM</span></a>
+                                </div>
+                                <div class="icon-tw2">
+                                    <a href="jivo-team.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_teamchats.svg" alt=""> <span>JivoChat Team Chats</span></a>
+                                </div>
+                                <div class="icon-thre3">
+                                    <a href="jivochat-email.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_email.svg" alt=""> <span>Company's Email Integration</span></a>
+                                </div>
+                                <div class="icon-fou4">
+                                    <a href="jivochat-integration.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_integrations.svg" alt=""> <span>Integrations</span></a>
+                                </div>
+                                <div class="icon-fiv5">
+                                    <a href="jivochat-api.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_docs.svg" alt=""> <span>API for Developers</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="jivochat-pricing.html">Pricing</a></li>
+                    <li><a href="affiliate.html">Affiliate program</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li class="space"><i class="fa-solid fa-lock"></i><a href="#">Login</a></li>
+                    <button>Sign up free</button>
+                </ul>
+                <div class="language-selection">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="facebook-hero">
+            <div class="facebook-content">
+                <h1>Callback in 30 seconds</h1>
+                <p>Some customers prefer phone calls rather than chats. Connect Callback feature in JivoChat to
+                    engage them</p>
+                <button>Connect</button> <br> <br>
+                <a href="#">See pricing</a>
+            </div>
+            <div class="facebook-content">
+                <video src="https://www.jivochat.ng/images/pages/calls/callback-en.mp4" autoplay loop></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="deals">
+        <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/calls/chat-calls.webp"
+            alt="">
+        <h1>Callbacks help close deals</h1>
+        <p>Phone calls and live chat are combined in JivoChat: you can talk to a customer on the phone an sent him
+            messages or documents via chat at the same time. Mix these channels to raise the conversation of site
+            visitors into customers</p>
+    </div>
+
+    <div class="telling">
+        <div class="telling-only">
+            <video src="https://www.jivochat.ng/images/pages/calls/info-client-en.mp4" autoplay loop></video>
+        </div>
+        <div class="telling-content">
+            <h2>JivoChat can tell you who's on the phone.</h2>
+            <p>Information about the caller is shown automatically during the call: his city, the source he came from,
+                what pages of your website he is currenlty viewing</p>
+            <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/calls/emojis.webp"
+                alt="">
+        </div>
+    </div>
+
+    <div class="thing">
+        <div class="thing-changer">
+            <h2>Callback or live chat? Don't choose one thing, take it all</h2>
+            <p>Live chat is convenient for delicate customer support, instant callback <span>----</span> for active
+                completion of the deal. We have combined both solutions in JivoChats so you can use the perfect tool for
+                different situations.</p>
+        </div>
+        <div class="thing-content">
+            <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/calls/widget-1.en.webp"
+                alt="">
+        </div>
+    </div>
+
+    <section class="where">
+        <div class="where-panel">
+            <h1>Take calls wherever it is convenient</h1>
+            <div class="where-wrapper">
+                <div class="where-content">
+                    <img src="https://www.jivochat.ng/images/pages/calls/icon-item01.svg" alt="">
+                    <p>Make and receive calls in the JivoChat app</p>
+                </div>
+                <div class="where-content">
+                    <img src="https://www.jivochat.ng/images/pages/calls/icon-item02.svg" alt="">
+                    <p>To a SIP phone connected to your IP PBX</p>
+                </div>
+                <div class="where-content">
+                    <img src="https://www.jivochat.ng/images/pages/calls/icon-item03.svg" alt="">
+                    <p>Redirect calls to your mobile phone if you are out of the office</p>
+                </div>
+            </div>
+            <div class="generating-wrapper">
+                <div class="generating-gradient">
+                    <div class="center">
+                        <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/calls/start-callback.en.webp"
+                            alt="">
+                    </div>
+                </div>
+                <div class="generating-content">
+                    <h2>JivoChat is genrating leads 24/7</h2>
+                    <p>The callback works even when the agents are busy or offline. JivoChat will invite the customer to
+                        choose a convenient time for a callback.</p>
+                </div>
+            </div>
+            <div class="double-wrapper">
+                <div class="double-content">
+                    <h2>Double sales from the mobile version of the site</h2>
+                    <p>In 2021, the share of mobile traffic has reached 83% <span>----</span> so customers order calls
+                        from mobile devices more often <span>----</span> with a callback feature, shopping in the mobile
+                        version of your site will become even more convenient</p>
+                </div>
+                <div class="double-defer">
+                    <video src="https://www.jivochat.ng/images/pages/calls/mobile-call-en.mp4" autoplay loop></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="positioning">
+        <div class="footer-text">
+            <h1>Connect callbacks today</h1>
+            <p>Callbacks are available in all JivoChat versions and are charged per minute</p>
+            <button onclick="openButton()">Try now</button>
+        </div>
+
+        <div class="form-wrapper">
+            <i class="fa-regular fa-circle-xmark" onclick="closeButton()"></i>
+            <div class="form">
+                <div class="form-logo">
+                    <img src="/jivochat_regular.svg" alt="">
+                </div>
+
+                <h2>Join Now</h2>
+                <form action="">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+
+                    <p>Please use at least 8 characters, including numbers, uppercase and lowercase letters, special
+                        characters</p>
+                    <span>By clicking "Continue" you create an account and agree to out <a href="#">Terms and
+                            Conditions</a> and <a href="#">Privacy Policy.</a></span> <br>
+                    <button class="lightgrey">Continue</button>
+                    <div class="flex">
+                        <div class="line"></div>
+                        <p>or</p>
+                        <div class="line"></div>
+                    </div>
+                    <button class="transparent">Sign up with Google</button>
+                    <p>Already have an account? <a href="#">Click here to login <br> i have a promo code </a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="calls">
+        <div class="calls-wrapper">
+            <div class="calls-content">
+                <p>Calls to US</p>
+                <h1>2₵</h1>
+            </div>
+            <div class="calls-content">
+                <p>Calls to UK</p>
+                <h1>1₵</h1>
+            </div>
+            <div class="calls-content">
+                <p>Calls to Canada</p>
+                <h1>1₵</h1>
+            </div>
+        </div>
+        <div class="anchor">
+            <a href="#">Check all prices</a>
+        </div>
+    </div>
+
+    <section class="still">
+        <div class="still-panel">
+            <h1>Still have questions?</h1>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>How does a Callback work?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>First, the client enters their phone number in the Callback window. JivoChat simultaneously calls
+                        all active support agents who are able to receive the call. The first support agent to pick up
+                        the phone is connected with the client. Usually, it takes about 20 seconds for the whole process
+                        to be initiated. After the agent has been connected with the client, they have the option to
+                        simultaneously have an in-chat conversation as well.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>How do I set up Callback technology on my website?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>If you already use JivoChat on your website, just turn on "Callback" in the app. If JivoChat
+                        is
+                        not installed on your website, sign up for free and install the code according to the
+                        isntructions.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>Can i set up the conditions for when and how i want <br> my Callback option to be displayed?
+                    </h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>The Callback function itself works 24/7. However, if you want a little bit of flexibility of
+                        when
+                        the callback proactive widget is displayed on your site, you can controll these settings.
+                        You
+                        can easily optimize depending on how many views the page gets, the average amount of time
+                        spent
+                        on the page, and more.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>How will the agent know that there is a call from the <br> Website?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>After picking up the handset and before connecting to the customer, the support agent will
+                        hear a voice notification that he/she accepted the all from the website. When teh call is
+                        received, the JivoChat application will automatically open on the agent's computer and they
+                        will see detailed information about who is calling. For example: how the visitor found the
+                        page, what city they are from, and what page they are currently viewing.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>How many agents can receive calls simultaneously?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>You can add any number of agents to receive incoming calls, however, simultaneous dialing
+                        will be done for no more than 9 numbers. If you assign more than 9 agents to receive calls
+                        for a website, then each call received will be sent to a random selection of 9 registered
+                        numbers and these ones will be dialed.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>Which countries does this service work in?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>Callback works all over the world.:)</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>How is Callback charged?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>Calls are charged per minute. The number of calls is not considered. To start using the
+                        Callback feature, recharge your account for $10 USD. You can p ay in your local currency if
+                        you want to, but the money will be charged in US dollars, using the exchange rate of your
+                        bank. Forwards to a landline and mobile phones are charged separately.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>Are calls charged separately?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>Yes, the Callback feature is only available and charged separately via JivoChat Pro. You can
+                        top-up the balance of calls and purchase an extended JivoChat Pro licence on the Pricing
+                        page.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>What can i do if i receive unwanted phone calls?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>You can block trolls by phone number and by IP-address. In order to do that, just open the
+                        "troll" call in the log and click the "block" button.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>Where can i find the call log?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>You can find the call log in the "Archieve" section of the app. YOu can filter out calls in
+                        the general list by selecting "All Calls" in the filter list.</p>
+                </div>
+            </div>
+            <div class="still-wrapper">
+                <div class="still-toggle-heading">
+                    <h2>How do i combine Proactive Invitations with Callback?</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="still-toggle-content">
+                    <p>Live chat is best suited for accompanying the client on teh website and as an unobtrusive
+                        assitant in making purchases. A Callback phone conversation is best suited for actively
+                        closing deals. We recommend setting up chats and calls so that during the exploration of
+                        your website, a chat invitation is displayed, but the Callback proposal appears only when a
+                        visitor is close to making a purchase (for example: moving goods to their cart or switching
+                        to the shopping cart view), or when there are signs of leaving the website (for example, if
+                        the mouse pointer crosses the top of the screen after viewing mutliple pages).</p>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrappers">
+            <div class="footer-wrapper1">
+                <div class="footer-content1">
+                    <h5>Product</h5>
+                    <p>Pricing</p>
+                    <p>Facebook</p>
+                    <p>Applications</p>
+                    <p>Affiliate program</p>
+                    <p>JivoChat Business Phone</p>
+                    <p>Callback</p>
+                    <p>JivoChat Team Chats</p>
+                    <p>Company's Email Integration</p>
+                    <p>Chatbots</p>
+                    <p>Instragram</p>
+                </div>
+                <div class="footer-content2">
+                    <h5>About</h5>
+                    <p>Blog</p>
+                    <p>Help</p>
+                    <p>Security</p>
+                    <p>Terms of service</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies</p>
+                    <p>Contact us</p>
+                    <p>Affiliate program</p>
+                    <p>Partner Deals & Offers</p>
+                </div>
+                <div class="footer-content3">
+                    <h5>Developers</h5>
+                    <p>API for Developers</p>
+                    <p>Integrations</p>
+                    <p>Bug Bounty</p>
+                </div>
+            </div>
+            <div class="footer-wrapper2">
+                <h5>+23414407378</h5>
+                <a href="#">contact@jivosite.com</a>
+            </div>
+        </div>
+        <div class="footers-icons">
+            <div class="footers1">
+                <div class="footer1">
+                    <p>Download mobile apps <i class="fa-brands fa-apple" id="black"></i> <i
+                            class="fa-brands fa-android" id="green"></i></p>
+                </div>
+                <div class="footer2">
+                    <p>Download desktop apps <i class="fa-brands fa-windows" id="lightblue"></i> <i
+                            class="fa-brands fa-apple" id="black"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="footers2">
+                <div class="footer3">
+                    <i class="fa-brands fa-facebook-f" id="blue"></i>
+                    <i class="fa-brands fa-instagram" id="orange"></i>
+                    <i class="fa-brands fa-youtube" id="red"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

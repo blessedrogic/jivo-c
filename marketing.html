@@ -1,0 +1,371 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="marketing.css">
+    <script src="https://kit.fontawesome.com/4b902564ce.js" crossorigin="anonymous"></script>
+    <script src="marketing.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">
+                <img src="/jivochat_regular.svg" alt="">
+            </a></div>
+             <div class="bars-toggle">
+                <i onclick="showing()" id="toggle-hide" class="fa-solid fa-bars"></i>
+                <i onclick="hiding()" id="toggle-show" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="links">
+                <div class="language-selection-hide">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="toggle-link">
+                    <div class="toggle-link-header">
+                        <span>
+                            <p>Features</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div class="toggle">
+                        <div class="toggle-wrapper">
+                            <div class="wrapper1">
+                                <div class="icon1">
+                                    <a href="jivo-life-chat.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_features.svg" alt=""> <span>Live Chat for Websites</span></a>
+                                </div>
+                                <div class="icon2">
+                                    <a href="mobile-SDK.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_mobilesdk.svg" alt=""> <span>Live Chat for Mobile</span></a>
+                                </div>
+                                <div class="icon3">
+                                    <a href="business-chatbots.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_chatbots.svg" alt=""> <span>Chatbots</span></a>
+                                </div>
+                                <div class="icon4">
+                                    <a href="jivochat-whatsapp.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_whatsapp.svg" alt=""> <span>WhatsApp Business</span></a>
+                                </div>
+                                <div class="icon5">
+                                    <a href="ai.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_ai-assistant.svg" alt=""> <span>AI assistant</span></a>
+                                </div>
+                                <div class="icon6">
+                                    <a href="marketing.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_jivo-marketing.svg" alt=""> <span>Jivo Marketing</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper2">
+                                <div class="icon-one">
+                                    <a href="instagram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_instagram.svg" alt=""> <span>Instragram</span></a>
+                                </div>
+                                <div class="icon-two">
+                                    <a href="facebook.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_facebook.svg" alt=""> <span>Facebook</span></a>
+                                </div>
+                                <div class="icon-three">
+                                    <a href="telegram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telegram.svg" alt=""> <span>Telegram</span></a>
+                                </div>
+                                <div class="icon-four">
+                                    <a href="viber.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_viber.svg" alt=""> <span>Viber</span></a>
+                                </div>
+                                <div class="icon-five">
+                                    <a href="apple-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_business-chat.svg" alt=""> <span>Apple Business Chat</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper3">
+                                <div class="icon-one1">
+                                    <a href="ip-telephony.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony_module.svg" alt=""> <span>Telephony Plus</span></a>
+                                </div>
+                                <div class="icon-two2">
+                                    <a href="video-calls.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_video_calls.svg" alt=""> <span>Videocalls</span></a>
+                                </div>
+                                <div class="icon-three3">
+                                    <a href="jivochat-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony.svg" alt=""> <span>JivoChat Business Phone</span></a>
+                                </div>
+                                <div class="icon-four4">
+                                    <a href="callback.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_calls.svg" alt=""> <span>Callback</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper4">
+                                <div class="icon-on1">
+                                    <a href="crm.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_crm.svg" alt=""> <span>CRM</span></a>
+                                </div>
+                                <div class="icon-tw2">
+                                    <a href="jivo-team.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_teamchats.svg" alt=""> <span>JivoChat Team Chats</span></a>
+                                </div>
+                                <div class="icon-thre3">
+                                    <a href="jivochat-email.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_email.svg" alt=""> <span>Company's Email Integration</span></a>
+                                </div>
+                                <div class="icon-fou4">
+                                    <a href="jivochat-integration.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_integrations.svg" alt=""> <span>Integrations</span></a>
+                                </div>
+                                <div class="icon-fiv5">
+                                    <a href="jivochat-api.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_docs.svg" alt=""> <span>API for Developers</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="jivochat-pricing.html">Pricing</a></li>
+                    <li><a href="affiliate.html">Affiliate program</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li class="space"><i class="fa-solid fa-lock"></i><a href="#">Login</a></li>
+                    <button>Sign up free</button>
+                </ul>
+                <div class="language-selection">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="quality">
+        <h1>Get more quality leads and sales with same traffic using Jivo Marketing</h1>
+        <p>Use Jivo Marketing tools to effectively work with your website traffic. Draw more attention with chat
+            campaigns and popup windows</p>
+    </section>
+
+    <section class="wrapper">
+        <div class="popup-wrapper">
+            <div class="popup-content">
+                <h2>Chat campaigns</h2>
+                <p>Get a personalized offer for each visitor. Use the rich segmentation options to offer what your
+                    customer is looking for.</p>
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-1.webp"
+                    alt="">
+            </div>
+            <div class="popup-content">
+                <h2>Chat campaigns</h2>
+                <p>Show your visitors what's important and redirect them as needed</p>
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-2.en.webp"
+                    alt="">
+                <div class="absolute-image">
+                    <img class="absolute"
+                        src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/cloud2.webp"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="solution">
+            <p>Chat campaigns and pop-up windows are included in Jivo Marketing solution, available on any plan for $5*
+                (*the price is valid for the time of launch and is subject to change as the solution will evolve)</p>
+            <button>Get started for free</button>
+            <p>14-day free trial</p>
+        </div>
+    </section>
+    <section class="separate">
+        <h1>Get business results with Jivo Marketing</h1>
+        <div class="attention-wrapper">
+            <div class="attention-content pad">
+                <h2>Get more attention for your promotions</h2>
+                <p>Have you got ongoing promotions that need more attention? Adding info about current promos into your
+                    website's section may not be enough. Set up a popup window. on selected pages to let more visitors
+                    know about current offers. Share promo codes with selected visitors directly in the chat using hcat
+                    campaigns</p>
+            </div>
+            <div class="attention-content">
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/activ-slider.en.webp"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="sales">
+            <div class="sales-wrapper">
+                <h2>Get quality leads for your sales team</h2>
+                <p>Do your customers expect a more personalized attitude and not eager to figure things out on their
+                    own? Use popups to set a callback form, collect phone numbers and pass them to the sales team</p>
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-3.en.webp"
+                    alt="">
+            </div>
+            <div class="sales-wrapper background-defer">
+                <h2>Grow your email list</h2>
+                <p>Email continues to be a reliable sales channel. Set up popups on your website to expand the audience
+                    you engage with. Offer them a discount or sign them up into useful content <span>---</span> whatever
+                    is relevant for your business</p>
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-4.en.webp"
+                    alt="">
+            </div>
+        </div>
+        <div class="promotion">
+            <div class="promotion-content">
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/popup_new.en.webp"
+                    alt="">
+            </div>
+            <div class="promotion-content">
+                <h2>Promote at no extra budget</h2>
+                <p>Have you got new products that no one knows about yet? Use popup windows to raise awareness of your
+                    launch and highlight the benefits of what you offer</p>
+            </div>
+        </div>
+
+        <div class="convert">
+            <div class="convert-wrapper">
+                <h2>Convert into purchase</h2>
+                <p>Popup windows are designed to help reach your marketing goals. Whether it is letting your customer
+                    know that certain products is popular or offering sweet delivery options at checkout
+                    <span>---</span> that will help you convert better. Chat campaigns will assist with the next step,
+                    quick reply button will help with frequently asked questions</p>
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-5.en.webp"
+                    alt="">
+            </div>
+            <div class="convert-wrapper def">
+                <h2>Make announcements</h2>
+                <p>Be proactive and quick about updating your customers on technical issues, delivery delays or changes
+                    in your way of business. Use popups to show temporary and important information. Use chat campaigns
+                    to let your customers know you are a message away if they more help. Customer will appreciate your
+                    care and stay with you longer</p>
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-6.en.webp"
+                    alt="">
+            </div>
+        </div>
+        <div class="improve">
+            <div class="improve-wrapper">
+                <h2>Improve your product based on customer feedback</h2>
+                <p>Customer dissatisfaction can be your opportunity to grow and boost profits. Learn how to refine the
+                    product, increase brand loyalty and customer retention through the NPS analysis. Explore the
+                    consumer loyalty index with special surveys included into Jivo Marketing</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="improve-wrapper">
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/nps.en.webp"
+                    alt="">
+            </div>
+        </div>
+        <div class="button-text">
+            <button>Get started for free</button>
+            <p>14-day free trial</p>
+        </div>
+    </section>
+
+    <div class="inside">
+        <h1>What's inside Jivo Marketing</h1>
+        <div class="inside-wrappers">
+            <div class="inside-wrapper">
+                <div class="inside-content">
+                    <h2>Setup in minutes</h2>
+                    <p>Use templates and flexible settings to save time and launch campaigns on time. No coding required
+                    </p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-7.en.webp"
+                        alt="">
+                </div>
+                <div class="inside-content special">
+                    <h2>Detailed statistics</h2>
+                    <p>Track the effectiveness of your marketing tools with statistics that shows your customer funnel
+                        and goal dynamics over time</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-9.en.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="inside-wrapper">
+                <div class="inside-content">
+                    <h2>Advanced triggers</h2>
+                    <p>Show popups that are only relevant to your visitors. Use triggers to segment your audience based
+                        on their actions and behaviour</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-8.en.webp"
+                        alt="">
+                </div>
+                <div class="inside-content">
+                    <h2>Flexible design</h2>
+                    <p>Configure popups that fit your style and design with colour themes and image options. Add images
+                        and emojis to chat chat campaigns to make your offers impossible to miss</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/block-10.en.webp"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="strike">
+        <div class="strike-wrapper">
+            <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/banner.en.webp" alt="">
+        </div>
+        <div class="strike-wrapper">
+            <h2>Jivo Marketing Solution is available on any plan</h2>
+        </div>
+        <div class="strike-wrapper">
+            <div class="button-t">
+                <button>Get started for free</button>
+                <p>14-days free trial</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="speaker">
+        <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/jivo-marketing/img-main.webp" alt="">
+    </div>
+    <div class="traffic">
+        <h1>Same traffic, more leads</h1>
+        <button>Get started for free</button>
+        <p>14-day free trial</p>
+    </div>
+
+    <footer>
+        <div class="footer-wrappers">
+            <div class="footer-wrapper1">
+                <div class="footer-content1">
+                    <h5>Product</h5>
+                    <p>Pricing</p>
+                    <p>Facebook</p>
+                    <p>Applications</p>
+                    <p>Affiliate program</p>
+                    <p>JivoChat Business Phone</p>
+                    <p>Callback</p>
+                    <p>JivoChat Team Chats</p>
+                    <p>Company's Email Integration</p>
+                    <p>Chatbots</p>
+                    <p>Instragram</p>
+                </div>
+                <div class="footer-content2">
+                    <h5>About</h5>
+                    <p>Blog</p>
+                    <p>Help</p>
+                    <p>Security</p>
+                    <p>Terms of service</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies</p>
+                    <p>Contact us</p>
+                    <p>Affiliate program</p>
+                    <p>Partner Deals & Offers</p>
+                </div>
+                <div class="footer-content3">
+                    <h5>Developers</h5>
+                    <p>API for Developers</p>
+                    <p>Integrations</p>
+                    <p>Bug Bounty</p>
+                </div>
+            </div>
+            <div class="footer-wrapper2">
+                <h5>+23414407378</h5>
+                <a href="#">contact@jivosite.com</a>
+            </div>
+        </div>
+        <div class="footers-icons">
+            <div class="footers1">
+                <div class="footer1">
+                    <p>Download mobile apps <i class="fa-brands fa-apple" id="black"></i> <i class="fa-brands fa-android" id="green"></i></p>
+                </div>
+                <div class="footer2">
+                    <p>Download desktop apps <i class="fa-brands fa-windows" id="lightblue"></i> <i class="fa-brands fa-apple" id="black"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="footers2">
+                <div class="footer3">
+                    <i class="fa-brands fa-facebook-f" id="blue"></i>
+                    <i class="fa-brands fa-instagram" id="orange"></i>
+                    <i class="fa-brands fa-youtube" id="red"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

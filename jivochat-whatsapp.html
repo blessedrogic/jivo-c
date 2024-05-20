@@ -1,0 +1,342 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jivochat-whatsapp.css">
+    <script src="https://kit.fontawesome.com/4b902564ce.js" crossorigin="anonymous"></script>
+    <script src="business-chatbots.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">
+                <img src="/jivochat_regular.svg" alt="">
+            </a></div>
+             <div class="bars-toggle">
+                <i onclick="showing()" id="toggle-hide" class="fa-solid fa-bars"></i>
+                <i onclick="hiding()" id="toggle-show" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="links">
+                <div class="language-selection-hide">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="toggle-link">
+                    <div class="toggle-link-header">
+                        <span>
+                            <p>Features</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    <div class="toggle">
+                        <div class="toggle-wrapper">
+                            <div class="wrapper1">
+                                <div class="icon1">
+                                    <a href="jivo-life-chat.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_features.svg" alt=""> <span>Live Chat for Websites</span></a>
+                                </div>
+                                <div class="icon2">
+                                    <a href="mobile-SDK.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_mobilesdk.svg" alt=""> <span>Live Chat for Mobile</span></a>
+                                </div>
+                                <div class="icon3">
+                                    <a href="business-chatbots.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_chatbots.svg" alt=""> <span>Chatbots</span></a>
+                                </div>
+                                <div class="icon4">
+                                    <a href="jivochat-whatsapp.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_whatsapp.svg" alt=""> <span>WhatsApp Business</span></a>
+                                </div>
+                                <div class="icon5">
+                                    <a href="ai.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_ai-assistant.svg" alt=""> <span>AI assistant</span></a>
+                                </div>
+                                <div class="icon6">
+                                    <a href="marketing.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_jivo-marketing.svg" alt=""> <span>Jivo Marketing</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper2">
+                                <div class="icon-one">
+                                    <a href="instagram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_instagram.svg" alt=""> <span>Instragram</span></a>
+                                </div>
+                                <div class="icon-two">
+                                    <a href="facebook.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_facebook.svg" alt=""> <span>Facebook</span></a>
+                                </div>
+                                <div class="icon-three">
+                                    <a href="telegram.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telegram.svg" alt=""> <span>Telegram</span></a>
+                                </div>
+                                <div class="icon-four">
+                                    <a href="viber.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_viber.svg" alt=""> <span>Viber</span></a>
+                                </div>
+                                <div class="icon-five">
+                                    <a href="apple-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_business-chat.svg" alt=""> <span>Apple Business Chat</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper3">
+                                <div class="icon-one1">
+                                    <a href="ip-telephony.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony_module.svg" alt=""> <span>Telephony Plus</span></a>
+                                </div>
+                                <div class="icon-two2">
+                                    <a href="video-calls.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_video_calls.svg" alt=""> <span>Videocalls</span></a>
+                                </div>
+                                <div class="icon-three3">
+                                    <a href="jivochat-business.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_telephony.svg" alt=""> <span>JivoChat Business Phone</span></a>
+                                </div>
+                                <div class="icon-four4">
+                                    <a href="callback.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_calls.svg" alt=""> <span>Callback</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper4">
+                                <div class="icon-on1">
+                                    <a href="crm.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_crm.svg" alt=""> <span>CRM</span></a>
+                                </div>
+                                <div class="icon-tw2">
+                                    <a href="jivo-team.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_teamchats.svg" alt=""> <span>JivoChat Team Chats</span></a>
+                                </div>
+                                <div class="icon-thre3">
+                                    <a href="jivochat-email.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_email.svg" alt=""> <span>Company's Email Integration</span></a>
+                                </div>
+                                <div class="icon-fou4">
+                                    <a href="jivochat-integration.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_integrations.svg" alt=""> <span>Integrations</span></a>
+                                </div>
+                                <div class="icon-fiv5">
+                                    <a href="jivochat-api.html"><img src="https://www.jivochat.ng/images/layout/submenu/submenu_docs.svg" alt=""> <span>API for Developers</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="jivochat-pricing.html">Pricing</a></li>
+                    <li><a href="affiliate.html">Affiliate program</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li class="space"><i class="fa-solid fa-lock"></i><a href="#">Login</a></li>
+                    <button>Sign up free</button>
+                </ul>
+                <div class="language-selection">
+                    <div class="language-selection-header">
+                        <p>EN</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Grow your business with JivoChat for <img src="https://www.jivochat.ng/images/pages/whatsapp/whatsapp.svg" alt=""> WhatsApp</h1>
+    </div>
+    <div class="hero-content">
+        <p>Connect WhatsApp to JIvoChat directly to engage audiences, boost sales and drive better customer service
+            results on your customers' prefered messenger</p>
+    </div>
+
+    <section class="average">
+        <div class="average-wrapper">
+            <div class="average-content">
+                <h2>2 billion <span>*</span></h2>
+                <h3>active users</h3>
+                <p>Market your business on the world's most popular messaging app</p>
+            </div>
+            <div class="average-content">
+                <h2>98% <span>*</span></h2>
+                <h3>average open-rate</h3>
+                <p>WhatsApp makes it easy for customers to interact with your brand</p>
+            </div>
+            <div class="average-content">
+                <h2>50% <span>*</span></h2>
+                <h3>use chat to make purchases</h3>
+                <p>Your customers are ready to get personalized shopping experience</p>
+            </div>
+        </div>
+        <div class="separate">
+            <p>* Based on <a href="#">https://whatsapp.com/</a></p>
+
+            <div class="buttons">
+                <input type="search" placeholder="Your email">
+                <button>Start free 14-day trial</button>
+            </div>
+        </div>
+    </section>
+    <section class="coming-soon">
+        <div class="coming-soon-wrapper">
+            <h2>COMING SOON</h2>
+            <h1>Increase customer engagement with WhatsApp campaigns in JivoChat</h1>
+            <p>Scale your WhatsApp marketing yet keep the personal touch with JivoChat campaigns enriched with customer
+                activity data</p>
+            <div class="coming-wrapper">
+                <div class="coming-content">
+                    <img src="http://127.0.0.1:5500/engage-icon-1.svg" alt="">
+                    <p>re-engage inactive customers</p>
+                </div>
+                <div class="coming-content">
+                    <img src="https://www.jivochat.ng/images/pages/whatsapp/engage-icon-2.svg" alt="">
+                    <p>present offers to specific audience segments</p>
+                </div>
+                <div class="coming-content">
+                    <img src="https://www.jivochat.ng/images/pages/whatsapp/engage-icon-3.svg" alt="">
+                    <p>give personal recommendations</p>
+                </div>
+            </div>
+            <div class="coming-wrapper">
+                <div class="coming-content">
+                    <img src="https://www.jivochat.ng/images/pages/whatsapp/engage-icon-4.svg" alt="">
+                    <p>use your brandname to notify your customers</p>
+                </div>
+                <div class="coming-content">
+                    <img src="https://www.jivochat.ng/images/pages/whatsapp/engage-icon-5.svg" alt="">
+                    <p>keep your customers updated on the latest news about your products and services</p>
+                </div>
+                <div class="coming-content">
+                    <img src="https://www.jivochat.ng/images/pages/whatsapp/engage-icon-6.svg" alt="">
+                    <p>conduct surveys and collect feedback</p>
+                </div>
+            </div>
+            <div class="animation">
+                <video src="https://www.jivochat.ng/images/pages/whatsapp/wa-animation-en.mp4" autoplay loop></video>
+            </div>
+            <div class="center">
+                <button>Start free 14-day trail</button>
+            </div>
+        </div>
+        <div class="only">
+            <img src="https://www.jivochat.ng/images/pages/whatsapp/sparkles.svg" alt="">
+        </div>
+    </section>
+    <section class="build">
+        <h1>Build a flawless support service in WhatsApp with JivoChat</h1>
+        <p>No extra-fee for messaging: cost for messages is calculated according to Meta's conversation-based pricing. First 1000 incoming messeges per month are free</p>
+        <div class="build-wrapper">
+            <div class="build-pannel">
+                <div class="build-content background-changer">
+                    <h2>Increase customer retention by providing quick responses</h2>
+                    <p>Answer instantly and be helpful right from the start with canned responses, chat bots and all-in-one tool that makes you effective</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/whatsapp/features-1.en.webp" alt="">
+                </div>
+                <div class="build-content">
+                    <h2>Give your team functional toolkit to create better customer experience</h2>
+                    <p>JivoChat CRM is a convenient workspace for managing communication and sales processes. It's easy to search, set reminders and tasks</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/whatsapp/features-3.en.webp" alt="">
+                </div>
+                <div class="build-content">
+                    <h2>Monitor agents' work</h2>
+                    <p>Watch teamwork performance: track response speed, number of missed chats, agents' workload</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/whatsapp/features-5.en.webp" alt="">
+                </div>
+            </div>
+            <div class="build-pannel">
+                <div class="build-content">
+                    <h2>Captivate customers with personal touch</h2>
+                    <p>Enrich your conversations with customer data captured in JivoChat: contact details, tags and categories agents' comments, chat history and more</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/whatsapp/features-2.en.webp" alt="">
+                </div>
+                <div class="build-content background-changer">
+                    <h2>Bring all the communications to one location</h2>
+                    <p>Conversations form WhatsApp and other messengers, live, chat, social media, email go to JivoChat applications so that you don't have to switch between different tabs in search of a new messages</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/whatsapp/features-4.en.webp" alt="">
+                </div>
+                <div class="build-content">
+                    <h2>Secure your data with JivoChat</h2>
+                    <p>Keep your data safe across all the devices your team is using. Chat history and customer data will be always available in your JivoChat account</p>
+                    <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/whatsapp/features-6.en.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantage">
+        <h1>Take advantage of the JivoChat benefits</h1>
+        <div class="advantage-wrapper">
+            <div class="advantage-content">
+                <img src="https://www.jivochat.ng/images/pages/whatsapp/adv-icon-1.svg" alt="">
+                <p>Stay in touch 24/7 with chat bots</p>
+            </div>
+            <div class="advantage-content">
+                <img src="https://www.jivochat.ng/images/pages/whatsapp/adv-icon-2.svg" alt="">
+                <p>Voice messages support</p>
+            </div>
+            <div class="advantage-content">
+                <img src="https://www.jivochat.ng/images/pages/whatsapp/adv-icon-3.svg" alt="">
+                <p>Intuitive and easy-to-use interface</p>
+            </div>
+            <div class="advantage-content blue">
+                <img src="https://www.jivochat.ng/images/pages/whatsapp/adv-icon-4.svg" alt="">
+                <p>White faster with the power of AI Assistant</p>
+            </div>
+        </div>
+
+        <div class="try">
+            <div class="try-content">
+                <h2>Try JivoChat For WhatsApp</h2>
+                <button>Start free 14-day trial</button><br>
+                <a href="#">How to connect WhatsApp Module</a>
+            </div>
+            <div class="image">
+                <img src="https://res.cloudinary.com/dmgesihkv/image/upload/f_auto,c_limit,w_1920,q_auto/images/pages/whatsapp/outro.en.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrappers">
+            <div class="footer-wrapper1">
+                <div class="footer-content1">
+                    <h5>Product</h5>
+                    <p>Pricing</p>
+                    <p>Facebook</p>
+                    <p>Applications</p>
+                    <p>Affiliate program</p>
+                    <p>JivoChat Business Phone</p>
+                    <p>Callback</p>
+                    <p>JivoChat Team Chats</p>
+                    <p>Company's Email Integration</p>
+                    <p>Chatbots</p>
+                    <p>Instragram</p>
+                </div>
+                <div class="footer-content2">
+                    <h5>About</h5>
+                    <p>Blog</p>
+                    <p>Help</p>
+                    <p>Security</p>
+                    <p>Terms of service</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies</p>
+                    <p>Contact us</p>
+                    <p>Affiliate program</p>
+                    <p>Partner Deals & Offers</p>
+                </div>
+                <div class="footer-content3">
+                    <h5>Developers</h5>
+                    <p>API for Developers</p>
+                    <p>Integrations</p>
+                    <p>Bug Bounty</p>
+                </div>
+            </div>
+            <div class="footer-wrapper2">
+                <h5>+23414407378</h5>
+                <a href="#">contact@jivosite.com</a>
+            </div>
+        </div>
+        <div class="footers-icons">
+            <div class="footers1">
+                <div class="footer1">
+                    <p>Download mobile apps <i class="fa-brands fa-apple" id="black"></i> <i class="fa-brands fa-android" id="green"></i></p>
+                </div>
+                <div class="footer2">
+                    <p>Download desktop apps <i class="fa-brands fa-windows" id="lightblue"></i> <i class="fa-brands fa-apple" id="black"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="footers2">
+                <div class="footer3">
+                    <i class="fa-brands fa-facebook-f" id="blue"></i>
+                    <i class="fa-brands fa-instagram" id="orange"></i>
+                    <i class="fa-brands fa-youtube" id="red"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
